@@ -1,0 +1,49 @@
+fun main() {
+    //POO - Programação Orientada a Objetios - Simular coisas da realidade na programação
+    //
+    //Objetos - possui Estados(nome, idade, endereço, altura e etc), comportamentos(andar, correr, dormir, comer etc)
+    //a POO é dividida
+    //
+    //Classes - São modelos que servem para a construção de objs derivados dele mesmo(Ex Classe pessoa)
+    //as classes recebem atriibutos(os Estados)
+    //
+    //Métodos - será as instancias da classe, as formas de agir
+    //Estrutura de uma classe
+    // class Nome(){ocorridos de um obj}
+    /*
+    val ricardo = Pessoa() //instaciondo um obj
+    ricardo.altura = 2.15
+    ricardo.corDosOlhos = "verde"
+    ricardo.peso = 100.0
+    ricardo.nome = "Ricardo  Grande de Oliweira"
+    println(ricardo.altura) //para exibir um atributo em especifico
+    
+    val convidado1 = Pessoa("Claudio", 1.79, "castamho", 183.0)
+    println(convidado1.peso)
+    val convidado2 = Pessoa("Juliana", 1.5, "azul", 53.5)
+    */
+    val convidado1 = Pessoa("Chandão ", 1.83, "preto", 73.9)
+    println(convidado1.nome)
+    val convidado2 = Pessoa("Victor", 1.67, "castamho", 90.4)
+    println(convidado2.nome)
+    val convidado3 = Pessoa("Victoria", 1.59, "azul", 65.5)
+    println(convidado3.nome)
+    val convidado4 = Pessoa("Franco", 1.80, "castanho", 83.0)
+    println(convidado4.nome)
+    val convidado5 = Pessoa("Santiago", 1.76 , "preto", 48.0)
+    println(convidado5.nome)
+    val convidadoEspecial = Pessoa("Suchomimo",3.53, "castamho", 3000.0)
+    println(convidadoEspecial.altura.nome.peso)
+}
+class Pessoa(val nome: String,
+             val altura:Double,
+             val corDosOlhos: String,
+             val peso: Double){
+    //declarando atributos para a classe
+    /*
+    var nome = ""
+    var altura = 0.0 
+    var corDosOlhos = ""
+    var peso = 0.0
+    */
+}
