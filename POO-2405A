@@ -33,6 +33,41 @@ fun main() {
     val convidado5 = Pessoa("Santiago", 1.76 , "preto", 48.0)
     println(convidado5.nome)
     val convidadoEspecial = Pessoa("Suchomimo",3.53, "castamho", 3000.0)
+    /**
+
+
+var dinossauro = Animal("Dinossauro",'M',"Rio Tietê","Carnívoro",397, true)
+                        
+   //println("Meu bichinho é um " + dinossauro.classe+" ele é " +dinossauro.dieta+" e ele mora no " +dinossauro.habitat+ "ele é muito legal!!! "+" todo mundo que passa por ele morre "+dinossauro.Atacar(true))
+   dinossauro.nadando(false)       
+                                                                
+}
+class Animal(val classe: String,val genero:Char,val habitat: String,
+              val dieta: String, val idade: Int,  val voa:Boolean){
+    
+    /*fun Atacar(bravo: Boolean){
+       
+        if(bravo == true){
+        println("Animal atacando")
+        }else{
+            println("Animal de boa, suavao")
+            */
+    fun nadando(nadando: Boolean){
+        if(nadando == true){
+            println("Animal nadando")
+        }else{
+            println("se ele não está nadando ele está voando né" )
+        }
+    }
+        }
+        
+    
+    
+        
+    
+
+//Métodos - Comportamentos da nossa classe, que os nossos receberão
+//eles são declarados usando funções
     println(convidadoEspecial.altura.nome.peso)
 }
 class Pessoa(val nome: String,
