@@ -51,12 +51,30 @@ class Animal(val classe: String,val genero:Char,val habitat: String,
         println("Animal atacando")
         }else{
             println("Animal de boa, suavao")
-            */
+            
     fun nadando(nadando: Boolean){
         if(nadando == true){
             println("Animal nadando")
         }else{
             println("se ele não está nadando ele está voando né" )
+            */
+                 val ContaCorrente = ContaNoBanco(1703, 13000.45, "Bradesco",
+                                      "Guilherme Domingos Müller")
+     ContaCorrente.consultarSaldo()
+}
+
+             
+            
+            class ContaNoBanco(var senha: Int, var saldo: Double,
+                         var banco : String, var dono:String){
+                         
+          fun consultarSaldo(){
+              println(" O saldo da sua conta é de R$13000.45")
+              
+          }
+          
+            }
+
         }
     }
         }
