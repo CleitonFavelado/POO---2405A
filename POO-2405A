@@ -58,9 +58,11 @@ class Animal(val classe: String,val genero:Char,val habitat: String,
         }else{
             println("se ele não está nadando ele está voando né" )
             */
-                 val ContaCorrente = ContaNoBanco(1703, 13000.45, "Bradesco",
+                     val ContaCorrente = ContaNoBanco(1703, 13000.45, "Bradesco",
                                       "Guilherme Domingos Müller")
      ContaCorrente.consultarSaldo()
+     //ContaCorrente.saque(13000.45)
+     ContaCorrente.deposito(1000.00)
 }
 
              
@@ -71,14 +73,37 @@ class Animal(val classe: String,val genero:Char,val habitat: String,
           fun consultarSaldo(){
               println(" O saldo da sua conta é de R$13000.45")
               
+              
           }
-          
-            }
+          /*fun saque(valorSaque: Double){
+              if(valorSaque <= 0 ){
+                  println("Impossível sacar R$$valorSaque")
+              }else if(saldo >= valorSaque){
+                  saldo -= valorSaque
+                  println("Saque de R$$valorSaque realizado com sucesso")
+                  
+              }else{
+                  println("Saldo insuficiente, saque de R$$valorSaque")
+              }
+          }
+          */
+           fun deposito(valorDeposito: Double){
+              if(valorDeposito <= 0 ){
+                  println("Impossível depositar R$$valorDeposito")
+              }else{
+                  saldo = saldo + valorDeposito
+                  println("Deposito de R$$valorDeposito realizado com sucesso")
+                  println("O seu saldo é de 14000.00 parabéns você é fino senhor")
+              }
+          }
 
-        }
-    }
-        }
         
+    
+    
+        
+    
+
+}
     
     
         
